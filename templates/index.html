@@ -6,7 +6,8 @@
 </head>
 <body>
   <h1>Log into your account or create a new account</h1>
-  <a href="/about">About</a>
+  <a href="/about">About</a> <br>
+  You cannot chat with anyone until you log in or make a new account. To make a new account, enter an unused username and choose a password.
   <!-- <form action="/submit" method="post">
     <label for="input">Your username:</label>
     <input type="text" id="input" name="userName" required>
@@ -16,10 +17,10 @@
     <button type="submit">Send</button>
   </form> -->
   <form action="/login" method="post">
-    <label for="username">Your username:</label>
+    <label for="username"><b>Your username:</b></label>
     <input type="text" id="username" name="username" required>
     <br>
-    <label for="password">Your password:</label>
+    <label for="password"><b>Your password:</b></label>
     <input type="text" id="password" name="password" required>
     <button type="submit">Log in</button>
   </form>

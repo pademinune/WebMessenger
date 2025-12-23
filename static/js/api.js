@@ -3,7 +3,7 @@ async function get_id() {
   try {
     const response = await fetch("/api/self_id");
     const data = await response.json();
-    return data
+    return data["user_id"]
   } catch (err) {
     console.error(err);
     return [];
